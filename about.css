@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #002244;
+    color: white;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #f0e68c;
+}
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    animation: slideUp 1.2s ease-in-out;
+}
+
+.destination {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.5s;
+}
+
+.destination h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #002244;
+}
+
+.destination p {
+    padding: 0 15px 20px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    animation: fadeIn 2s ease-in;
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

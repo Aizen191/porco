@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef9f4;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: #002244;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #d4af37;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+.hero {
+    background: url('https://www.etihad.com/-/media/etihad/images/destinations/abu-dhabi-hero-banner.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gol;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #b18e2f;
+}
+
+.booking {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff8e1;
+}
+
+.booking h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.flight-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.input-container input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.slider {
+    margin: 40px 0;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+
+.slider-image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.new-destinations {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fafafa;
+}
+
+.new-destinations h2 {
+    font-size: 2rem;
+    color: #002244;
+}
+
+.destinations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.destination {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.destination p {
+    padding: 0 20px 20px;
+    color: #555;
+}
+
+.footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.new-destinations {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff8e1;
+    border-top: 1px solid #ddd;
+}
+
+.new-destinations h2 {
+    font-size: 2.2rem;
+    color: #002244;
+    margin-bottom: 20px;
+}
+
+.new-destinations p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #555;
+    line-height: 1.8;
+}
